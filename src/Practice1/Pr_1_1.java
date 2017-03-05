@@ -48,7 +48,7 @@ public class Pr_1_1 {
 
         System.out.println("\n\t---------");
 
-        triange();
+        triange(3, 4, 5);
 
         System.out.println("\n\t---------");
         sumOfInt();
@@ -161,16 +161,9 @@ public class Pr_1_1 {
         //System.out.println("f5 - " + sh5);
     }
 
-    public static void triange(){
-        int cat1 = 3;
-        int cat2 = 4;
-        int gip = 6;
+    public static void triange(int cat1, int cat2, int gip){
+        System.out.println((gip*gip == cat1*cat1 + cat2*cat2)?"This triangle is rectangular":"Not rectangular");
 
-        if(gip*gip == ((cat1*cat1) + (cat2*cat2))){
-            System.out.println("This triangle is rectangular");
-        } else{
-            System.out.println("Not rectangular");
-        }
     }
 
     public static void sumOfInt(){
@@ -202,9 +195,7 @@ public class Pr_1_1 {
         }
 
         for(int i=0; i<=number; i++){
-            if( (i%2) == 0){
-                summ += i;
-            }
+            if( (i%2) == 0) summ += i;
         }
 
         System.out.println("sum of even integer = " + summ);
@@ -214,8 +205,6 @@ public class Pr_1_1 {
         System.out.println("task 7:summ of prime integer");
         int number =0;
         int summ = 0;
-
-        Scanner sc = new Scanner(System.in);
 
         number = enterOnlyInt();
 
